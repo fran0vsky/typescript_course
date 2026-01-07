@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./dist",
+    "target": "esnext",
+    "module": "nodenext",
+    "strict": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "moduleDetection": "force",
+    "isolatedModules": true
+  },
+  "include": ["./*.ts"]
+}
+
