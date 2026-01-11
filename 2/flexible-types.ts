@@ -5,7 +5,7 @@ grade = false
 grade = {}
 grade = []
 
-// use any as last resort, try to avoid it
+// Use 'any' as a last resort; try to avoid it
 
 let number: string | number = 1;
 

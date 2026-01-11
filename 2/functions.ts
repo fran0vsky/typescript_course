@@ -2,12 +2,12 @@ function add(a: number, b: number): number {
     return a + b;
 }
 
-// function automatically returns void, so we can omit the return type
+// The function automatically returns void, so we can omit the return type
 function log(message: string) {
     console.log(message);
 }
 
-// we can ovveride the inferred type with : never
+// We can override the inferred type with : never
 function logAndThrow(errorMessage: string): never {
     console.log(errorMessage);
     throw new Error(errorMessage);

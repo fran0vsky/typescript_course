@@ -23,6 +23,6 @@ let possibleResults2: [1 | -1, 1 | -1];
 
 possibleResults2 = [1, -1];
 
-function acces(role: Role) {
+function access(role: Role) {
     // ... 
 }

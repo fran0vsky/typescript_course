@@ -1,8 +1,8 @@
-// data:
-// initial amount
-// annual contribution
-// expected return
-// duration
+// Investment data structure:
+// - initial amount
+// - annual contribution
+// - expected return
+// - duration
 
 type InvestmentData = {
     initialAmount: number;
@@ -24,19 +24,19 @@ function calculateInvestment(data: InvestmentData): CalculationResult {
     const { initialAmount, annualContribution, duration, expectedReturn } = data;
 
     if (initialAmount < 0) {
-        return 'Initial investment amount must be at least zero.'
+        return 'Initial investment amount must be zero or greater.'
     }
 
     if (duration <= 0){
-        return 'No valid amount of years provided.'
+        return 'Invalid number of years provided.'
     }
     if (expectedReturn < 0){
-        return 'Expected return must be at least zero.'
+        return 'Expected return must be zero or greater.'
     }
 }
 
 function printResult(results) {
-    // print (output) the result data
+    // Output the result data
 }
 
 const results = calculateInvestment(...)

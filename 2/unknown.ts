@@ -8,4 +8,4 @@ function process(val: any) {
     }
 }
 
-// safer than 'any' but more flexible than union types
+// Safer than 'any' but more flexible than union types
