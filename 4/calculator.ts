@@ -33,6 +33,28 @@ function calculateInvestment(data: InvestmentData): CalculationResult {
     if (expectedReturn < 0){
         return 'Expected return must be zero or greater.'
     }
+
+    let total = initialAmount;
+    let totalContributions = 0;
+    let totalInterestEarned = 0;
+    
+    const annualResults: InvestmentResult[] = [];
+
+    for (let i = 0; i < duration; i++) {
+        total = total * (1 + expectedReturn);
+        totalInterestEarned = total - totalContributions - initialAmount;
+        totalContributions = totalContributions + annualContribution;
+        total = total + annualContribution;
+
+        annualResults.push({
+            year: `Year ${i + 1}`,
+            totalAmount: total,
+            totalInterestEarned,
+            totalContributions,
+        });
+    }
+
+    return annualResults;
 }
 
 function printResult(results) {
