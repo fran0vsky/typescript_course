@@ -1,11 +1,8 @@
 class User {
-    name: string;
-    age: number;
-
-    constructor(n: string, a: number) {
-        this.name = n;
-        this.age = a;
-    }
+    constructor(public name: string, public age: number) {}
 }
 
-new User()
+const franek = new User('Franek', 21);
+const eustachy = new User('Eustachy', 98);
+
+console.log(franek, eustachy);
