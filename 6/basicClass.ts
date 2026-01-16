@@ -1,5 +1,5 @@
 class User {
-    public hobbies: string[] = [];
+    readonly hobbies: string[] = [];
 
     constructor(public name: string, public age: number) {}
 
