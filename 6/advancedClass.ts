@@ -5,6 +5,12 @@ class User {
         return this.firstName + ' ' + this.lastName;
 
     }
+
+    static eid = 'USER';
+
+    static greet() {
+        console.log('Hello there!');
+    }
 }
 
 // Setters
@@ -25,6 +31,9 @@ class User {
 //
 //     }
 // }
+
+console.log(User.eid);
+User.greet();
 
 const franek = new User('Franek', 'Kaminski');
 console.log(franek.fullName);
