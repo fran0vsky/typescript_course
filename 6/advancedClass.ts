@@ -1,5 +1,5 @@
 class User {
-    constructor(private firstName: string, private lastName: string) {}
+    constructor(protected firstName: string, private lastName: string) {}
 
     get fullName() {
         return this.firstName + ' ' + this.lastName;
@@ -41,5 +41,10 @@ console.log(franek.fullName);
 class Employee extends User {
     constructor(public jobTitle: string) {
         super('Franek', 'Kaminski');
+    }
+
+    work() {
+        // ...
+        console.log(this.fullName);
     }
 }
