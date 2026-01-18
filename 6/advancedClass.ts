@@ -37,3 +37,9 @@ User.greet();
 
 const franek = new User('Franek', 'Kaminski');
 console.log(franek.fullName);
+
+class Employee extends User {
+    constructor(public jobTitle: string) {
+        super('Franek', 'Kaminski');
+    }
+}
