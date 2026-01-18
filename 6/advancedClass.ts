@@ -48,3 +48,19 @@ class Employee extends User {
         console.log(this.fullName);
     }
 }
+
+abstract class UIElement {
+    constructor(public idnetifier: string) {
+        //logic to duplicate the UI element
+    }
+}
+
+// let uiElement = new UIElement();
+
+class SideDrawerElement extends UIElement {
+    constructor(public identifier: string, public position: 'left' | 'right') {
+        super(identifier);
+    }
+
+    // ...
+}
