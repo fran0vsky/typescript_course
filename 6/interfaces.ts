@@ -6,6 +6,22 @@ interface Authenticable {
     logout(): void;
 }
 
+class AuthenticatableUser implements Authenticable {
+    constructor(
+        public userName: string,
+        public email: string, 
+        public password: string
+    ) {}
+
+    login() {
+        // ...
+    }
+
+    logout() {
+        // ...
+    }
+}
+
 // interface Authenticable {
 //     role: string;
 // }
@@ -21,4 +37,4 @@ user = {
     logout() {
         // clear the session
     }
-}
+};
