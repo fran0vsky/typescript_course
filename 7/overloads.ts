@@ -1,3 +1,5 @@
+function getLength(val: any[]): number;
+function getLength(val: string): string;
 function getLength(val: string | any[]) {
   if (typeof val === 'string') {
     const numberOfWords = val.split(' ').length;
@@ -6,6 +8,6 @@ function getLength(val: string | any[]) {
   return val.length;
 }
 
-const numberOfWords = getLength('Hello world');
-// numOfWords.length
-const numberOfCharacters = getLength(['Hello', 'world']);
+const numOfWords = getLength('Hello world');
+numOfWords.length
+const numOfCharacters = getLength(['Hello', 'world']);
