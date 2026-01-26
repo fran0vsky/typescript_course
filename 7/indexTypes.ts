@@ -15,3 +15,12 @@ store.name= 'Franek';
 let roles = ['admin', 'guest', 'editor'] as const;
 // roles.push('franek');
 const firstRole = roles[0];
+
+const dataEntries = {
+  entry1: 0.51,
+  entry2: -1.52
+} satisfies Record<string, number>;
+
+// ...
+
+// dataEntries.entry3
