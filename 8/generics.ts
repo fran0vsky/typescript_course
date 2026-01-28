@@ -16,7 +16,7 @@ function merge<T, U>(a: T, b: U) {
 
 const ids = merge(1, "Franek");
 
-function mergeObj<T extends object>(a: T, b: T) {
+function mergeObj<T extends object, U extends object>(a: T, b: U) {
   return { ...a, ...b };
 }
 
