@@ -15,3 +15,10 @@ function merge<T, U>(a: T, b: U) {
 }
 
 const ids = merge(1, "Franek");
+
+function mergeObj<T extends object>(a: T, b: T) {
+  return { ...a, ...b };
+}
+
+const merged = mergeObj({ userName: "Franek" }, { age: 21 });
+console.log(merged);
