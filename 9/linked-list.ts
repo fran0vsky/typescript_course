@@ -19,6 +19,7 @@ class LinkedList<T> {
       }
       current.next = node;
     }
+    this.length++;
   }
 }
 const numberList = new LinkedList<number>();
