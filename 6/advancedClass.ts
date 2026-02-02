@@ -50,7 +50,7 @@ class Employee extends User {
 }
 
 abstract class UIElement {
-    constructor(public idnetifier: string) {
+    constructor(public identifier: string) {
         //logic to duplicate the UI element
     }
 }

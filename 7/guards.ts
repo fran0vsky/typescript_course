@@ -12,7 +12,7 @@ const dbSource: DBSource = {
 
 type Source = FileSource | DBSource;
 
-function isFile(source: Source) {
+function isFile(source: Source): source is FileSource {
   return source.type === 'file';
 }
 

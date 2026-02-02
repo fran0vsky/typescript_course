@@ -6,7 +6,7 @@ type FileData = {
 type DatabaseData = {
     connectionUrl: string;
     credentials: string;
-}
+};
 
 type Status = {
     isOpen: boolean;
