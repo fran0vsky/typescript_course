@@ -9,6 +9,14 @@ class LinkedList<T> {
   private tail?: ListNode<T>;
   private length = 0;
 
+  get size() {
+    return this.length;
+  }
+
+  isEmpty() {
+    return this.length === 0;
+  }
+
   add(value: T) {
     const node = new ListNode(value);
     if (!this.root || !this.tail) {
