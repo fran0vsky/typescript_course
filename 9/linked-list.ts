@@ -1,5 +1,3 @@
-// linked list implementation in typescript
-
 class ListNode<T> {
   next?: ListNode<T>;
 
