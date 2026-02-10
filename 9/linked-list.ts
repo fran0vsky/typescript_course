@@ -1,4 +1,4 @@
-// linked list implementation in typescript
+// linked list implementation in typescript   ss
 
 class ListNode<T> {
   next?: ListNode<T>;
