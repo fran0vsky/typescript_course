@@ -103,3 +103,4 @@ console.log("Length: " + numberList.getNumberOfElements());
 numberList.print();
 
 const nameList = new LinkedList<string>();
+// ss
