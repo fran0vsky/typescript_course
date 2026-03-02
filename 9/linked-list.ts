@@ -102,4 +102,4 @@ numberList.insertAt(100, 1);
 console.log("Length: " + numberList.getNumberOfElements());
 numberList.print();
 
-const nameList = new LinkedList<string>();l
+const nameList = new LinkedList<string>();
