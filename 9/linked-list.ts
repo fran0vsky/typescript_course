@@ -92,7 +92,7 @@ numberList.add(-3);
 console.log("Length: " + numberList.getNumberOfElements());
 numberList.print();
 
-console.log("--- NOW REMOVING INDEX 1 ---");
+console.log("--- NOW REMOVING INDEX 1 ---");1
 numberList.removeAt(1);
 console.log("Length: " + numberList.getNumberOfElements());
 numberList.print();
