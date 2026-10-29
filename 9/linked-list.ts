@@ -89,7 +89,7 @@ numberList.add(10);
 numberList.add(5);
 numberList.add(-3);
 
-console.log("Length: 1234" + numberList.getNumberOfElements());
+console.log("Length: " + numberList.getNumberOfElements());
 numberList.print();
 
 console.log("--- NOW REMOVING INDEX 1 ---");
