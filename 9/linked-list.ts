@@ -88,7 +88,7 @@ const numberList = new LinkedList<number>();
 numberList.add(10);
 numberList.add(5);
 numberList.add(-3);
-console.log("Length: 12345" + numberList.getNumberOfElements());
+console.log("Length: " + numberList.getNumberOfElements());
 numberList.print();
 
 console.log("--- NOW REMOVING INDEX 1 ---");
